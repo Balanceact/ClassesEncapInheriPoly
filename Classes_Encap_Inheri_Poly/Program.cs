@@ -4,7 +4,8 @@
     {
         static void Main(string[] args)
         {
-            //Console.WriteLine("Hello, World!");
+            Person testPerson1 = new Person("Patrik", "Person", 35, 175, 80);
+            Person testPerson2 = new Person("Peter", "Person", 32);
         }
     }
 }
