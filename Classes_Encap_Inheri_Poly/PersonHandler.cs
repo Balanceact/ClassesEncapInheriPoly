@@ -32,6 +32,11 @@ namespace Classes_Encap_Inheri_Poly
         public Person CreatePerson(string fname, string lname, int age, double height, double weight)
         {
             return new Person(fname, lname, age, height, weight);
-        }   
+        }
+
+        internal void PrintPerson(Person person)
+        {
+            Console.WriteLine($"{person.FName} {person.LName} is {person.Age} years of age, {person.Height}m of height and weighs {person.Weight}kg.");
+        }
     }
 }
