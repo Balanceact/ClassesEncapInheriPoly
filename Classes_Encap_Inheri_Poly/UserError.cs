@@ -8,6 +8,6 @@ namespace Classes_Encap_Inheri_Poly
 {
     internal abstract class UserError
     {
-
+        public abstract string UEMessage();
     }
 }
