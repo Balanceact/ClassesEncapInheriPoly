@@ -1,6 +1,4 @@
-﻿
-
-namespace Classes_Encap_Inheri_Poly
+﻿namespace Classes_Encap_Inheri_Poly
 {
     internal class Program
     {
@@ -15,7 +13,7 @@ namespace Classes_Encap_Inheri_Poly
                 Person testPerson4 = personHandler.CreatePerson("Hurtig", "Bulle", 43, 1.78, 70);
                 Person testPerson5 = personHandler.CreatePerson("Glad", "Ihågen", 22, 1.82, 88);
 
-                Console.WriteLine("Before changes:");
+                Console.Write("Before changes: ");
                 personHandler.PrintPerson(testPerson4);
 
                 personHandler.SetFName(testPerson4, "Öjvid");
@@ -24,10 +22,10 @@ namespace Classes_Encap_Inheri_Poly
                 personHandler.SetWeight(testPerson4, 65);
                 personHandler.SetHeight(testPerson4, 1.67);
 
-                Console.WriteLine("After changes:");
+                Console.Write("After changes: ");
                 personHandler.PrintPerson(testPerson4);
 
-                Console.WriteLine("Before changes:");
+                Console.Write("Before changes: ");
                 personHandler.PrintPerson(testPerson5);
 
                 personHandler.SetFName(testPerson5, "Karin");
@@ -36,8 +34,24 @@ namespace Classes_Encap_Inheri_Poly
                 personHandler.SetWeight(testPerson5, 60);
                 personHandler.SetHeight(testPerson5, 1.70);
 
-                Console.WriteLine("After changes:");
+                Console.Write("After changes: ");
                 personHandler.PrintPerson(testPerson5);
+
+                UserError uEN1 = new NumericInputError();
+                UserError uET1 = new TextInputError();
+                UserError uEN2 = new NumericInputError();
+                UserError uET2 = new TextInputError();
+                UserError uEN3 = new NumericInputError();
+                UserError uET3 = new TextInputError();
+                UserError uEN4 = new NumericInputError();
+                UserError uET4 = new TextInputError();
+
+                List<UserError> userErrorList = new List<UserError>() { uEN1, uET1, uEN2, uET2, uEN3, uET3, uEN4, uET4 };
+
+                foreach (UserError uE in userErrorList)
+                {
+                    Console.WriteLine(uE.UEMessage());
+                }
             }
             catch (Exception Ex)
             {
