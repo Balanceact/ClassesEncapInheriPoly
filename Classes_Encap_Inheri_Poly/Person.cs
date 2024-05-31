@@ -11,8 +11,8 @@ namespace Classes_Encap_Inheri_Poly
 		private string fName;
 		private string lName;
         private int age;
-        private int height;
-		private int weight;
+        private double height;
+		private double weight;
 
 		public string FName
         {
@@ -60,7 +60,7 @@ namespace Classes_Encap_Inheri_Poly
                 }
             }
         }
-        public int Height 
+        public double Height 
         { 
             get { return height; } 
             set 
@@ -75,7 +75,7 @@ namespace Classes_Encap_Inheri_Poly
                 }
             } 
         }
-		public int Weight
+		public double Weight
         {
             get { return weight; }
             set
@@ -91,7 +91,7 @@ namespace Classes_Encap_Inheri_Poly
             }
         }
 
-		public Person(string fName, string lName, int age, int height, int weight)
+		public Person(string fName, string lName, int age, double height, double weight)
         {
             FName = fName;
 			LName = lName;
