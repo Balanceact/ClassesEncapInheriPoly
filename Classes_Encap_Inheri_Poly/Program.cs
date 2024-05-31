@@ -45,8 +45,11 @@
                 UserError uET3 = new TextInputError();
                 UserError uEN4 = new NumericInputError();
                 UserError uET4 = new TextInputError();
+                UserError uEAN = new AlphaNumericInputError();
+                UserError uESC = new SpecialInputError();
+                UserError uEPW = new PasswordInputError();
 
-                List<UserError> userErrorList = new List<UserError>() { uEN1, uET1, uEN2, uET2, uEN3, uET3, uEN4, uET4 };
+                List<UserError> userErrorList = new List<UserError>() { uEN1, uET1, uEN2, uET2, uEN3, uET3, uEN4, uET4, uEAN, uESC, uEPW };
 
                 foreach (UserError uE in userErrorList)
                 {
