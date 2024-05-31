@@ -8,9 +8,9 @@ namespace Classes_Encap_Inheri_Poly
         {
             try
             {
-                //Person testPerson1 = new Person("Patrik", "Persson", 35, 175, 80);
+                //Person testPerson1 = new Person("Patrik", "Persson", 35, 1.75, 80);
                 //Person testPerson2 = new Person("Peter", "Persson", 32);
-                //Person testPerson3 = new Person("Hildar", "Johansson", 35, 167, 75);
+                //Person testPerson3 = new Person("Hildar", "Johansson", 35, 1.67, 75);
                 PersonHandler personHandler = new PersonHandler();
                 Person testPerson4 = personHandler.CreatePerson("Hurtig", "Bulle", 43, 1.78, 70);
                 Person testPerson5 = personHandler.CreatePerson("Glad", "Ihågen", 22, 1.82, 88);
