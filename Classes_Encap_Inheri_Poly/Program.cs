@@ -101,6 +101,16 @@
                     //3.4.13: On each of the animals in the list pull print the string built by the method Stats() that is the most specific available to the subclass of said animal.
                 }
 
+                Console.WriteLine();
+
+                foreach (Animal animal in animals)
+                {
+                    if(animal is Dog)
+                    { 
+                        Console.WriteLine($"{animal.Stats()}");
+                    }
+                }
+
             }
             catch (Exception Ex)
             {
