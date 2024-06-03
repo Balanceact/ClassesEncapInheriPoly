@@ -56,6 +56,10 @@ namespace Classes_Encap_Inheri_Poly
         {
             LikesToBark = likesToBark;
         }
+        public void Blargh()
+        {
+            Console.WriteLine("*Random crap*");
+        }
         public override void DoSound()
         {
             Console.WriteLine("Bark");
