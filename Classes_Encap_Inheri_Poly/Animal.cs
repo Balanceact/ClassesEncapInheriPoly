@@ -112,29 +112,30 @@ namespace Classes_Encap_Inheri_Poly
     }
     internal class Pelican : Bird
     {
+        public double BeakSize { get; set; }
 
-        public Pelican(string name, int age, double weight, double longestDimension, int numberOfLimbs, double wingSpan)
+        public Pelican(string name, int age, double weight, double longestDimension, int numberOfLimbs, double wingSpan, double beakSize)
             : base(name, age, weight, longestDimension, numberOfLimbs, wingSpan)
         {
-            
+            BeakSize = beakSize;
         }
     }
     internal class Flamingo : Bird
     {
-
-        public Flamingo(string name, int age, double weight, double longestDimension, int numberOfLimbs, double wingSpan)
+        public bool LikesToStandOnOneLeg;
+        public Flamingo(string name, int age, double weight, double longestDimension, int numberOfLimbs, double wingSpan, bool likesToStandOnOneLeg)
             : base(name, age, weight, longestDimension, numberOfLimbs, wingSpan)
         {
-
+            LikesToStandOnOneLeg = likesToStandOnOneLeg;
         }
     }
     internal class Swan : Bird
     {
-
-        public Swan(string name, int age, double weight, double longestDimension, int numberOfLimbs, double wingSpan)
+        public bool IsUglyDuckling;
+        public Swan(string name, int age, double weight, double longestDimension, int numberOfLimbs, double wingSpan, bool isUglyDuckling)
             : base(name, age, weight, longestDimension, numberOfLimbs, wingSpan)
         {
-
+            IsUglyDuckling = isUglyDuckling;
         }
     }
 }
