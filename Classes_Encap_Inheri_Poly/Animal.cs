@@ -110,4 +110,31 @@ namespace Classes_Encap_Inheri_Poly
             Console.WriteLine("Howls and growls");
         }
     }
+    internal class Pelican : Bird
+    {
+
+        public Pelican(string name, int age, double weight, double longestDimension, int numberOfLimbs, double wingSpan)
+            : base(name, age, weight, longestDimension, numberOfLimbs, wingSpan)
+        {
+            
+        }
+    }
+    internal class Flamingo : Bird
+    {
+
+        public Flamingo(string name, int age, double weight, double longestDimension, int numberOfLimbs, double wingSpan)
+            : base(name, age, weight, longestDimension, numberOfLimbs, wingSpan)
+        {
+
+        }
+    }
+    internal class Swan : Bird
+    {
+
+        public Swan(string name, int age, double weight, double longestDimension, int numberOfLimbs, double wingSpan)
+            : base(name, age, weight, longestDimension, numberOfLimbs, wingSpan)
+        {
+
+        }
+    }
 }
