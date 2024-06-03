@@ -55,6 +55,21 @@
                 {
                     Console.WriteLine(uE.UEMessage());
                 }
+
+                Horse horse = new Horse("Torsten", 9, 400, 2.5, 4, true);
+                Dog dog = new Dog("Pepsi", 3, 20, 0.7 , 4, true);
+                Hedgehog hedgehog = new Hedgehog("Harald", 5, 0.5, 0.25, 4, 742);
+                Worm worm = new Worm("Rosie", 0, 0.01, 0.1, 0, false);
+                Bird bird = new Bird("Polly", 8, 0.2, 0.2, 4, 0.35);
+                Wolf wolf = new Wolf("Henry", 12, 75, 1.9, 4, true);
+                Pelican pelican = new Pelican("George", 7, 4.1, 2.1, 4, 2.1, 0.45);
+                Flamingo flamingo = new Flamingo("Beatrice", 3, 3, 2.5, 4, 2.5, true);
+                Swan swan = new Swan("Pearl", 6, 5, 2.2, 4, 2.2, false);
+                Wolfman wolfman = new Wolfman("Delulu", 28, 85, 1.78, 4, true);
+
+                List<Animal> animals = new List<Animal>() { horse, dog, hedgehog, worm, bird, wolf, pelican, flamingo, swan, wolfman };
+
+
             }
             catch (Exception Ex)
             {
