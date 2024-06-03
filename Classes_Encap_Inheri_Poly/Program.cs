@@ -92,6 +92,9 @@
                 //dogs.Add(horse);
                 //3.4.9: A dog is an animal, and a horse is an animal, but a horse is not a dog, hence it can't be added to the list.
 
+                //3.4.10: If by "all classes" you mean the ones made in 3.3, then the answer is a list of Animals.
+                //If by "all classes" you mean ALL classes then perhaps a list of Classes?
+
             }
             catch (Exception Ex)
             {
