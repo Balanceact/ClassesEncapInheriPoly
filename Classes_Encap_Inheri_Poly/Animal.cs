@@ -14,7 +14,7 @@ namespace Classes_Encap_Inheri_Poly
         protected double LongestDimension { get; set; }
         protected int NumberOfLimbs { get; set; }
 
-        protected Animal(string name, int age, double weight, double longestDimension, int numberOfLimbs)
+        public Animal(string name, int age, double weight, double longestDimension, int numberOfLimbs)
         {
             Name = name;
             Age = age;
@@ -29,6 +29,12 @@ namespace Classes_Encap_Inheri_Poly
     internal class Horse : Animal
     { 
         public bool IsShoed { get; set; }
+
+        public Horse(string name, int age, double weight, double longestDimension, int numberOfLimbs, bool isShoed)
+            : base(name, age, weight, longestDimension, numberOfLimbs)
+        {
+            IsShoed = isShoed;
+        }
         public override void doSound()
         {
             Console.WriteLine("Neigh");
@@ -37,6 +43,12 @@ namespace Classes_Encap_Inheri_Poly
     internal class Dog : Animal
     {
         public bool LikesToBark { get; set; }
+
+        public Dog(string name, int age, double weight, double longestDimension, int numberOfLimbs, bool likesToBark)
+            : base(name, age, weight, longestDimension, numberOfLimbs)
+        {
+            LikesToBark = likesToBark;
+        }
         public override void doSound()
         {
             Console.WriteLine("Bark");
@@ -45,6 +57,12 @@ namespace Classes_Encap_Inheri_Poly
     internal class Hedgehog : Animal
     {
         public int NumberOfSpikes { get; set; }
+
+        public Hedgehog(string name, int age, double weight, double longestDimension, int numberOfLimbs, int numberOfSpikes)
+            : base(name, age, weight, longestDimension, numberOfLimbs)
+        {
+            NumberOfSpikes = numberOfSpikes;
+        }
         public override void doSound()
         {
             Console.WriteLine("Grunts and snuffles");
@@ -53,6 +71,12 @@ namespace Classes_Encap_Inheri_Poly
     internal class Worm : Animal
     {
         public bool IsPoisonus { get; set; }
+
+        public Worm(string name, int age, double weight, double longestDimension, int numberOfLimbs, bool isPoisonus)
+            : base(name, age, weight, longestDimension, numberOfLimbs)
+        {
+            IsPoisonus = isPoisonus;
+        }
         public override void doSound()
         {
             Console.WriteLine("Munches");
@@ -61,6 +85,12 @@ namespace Classes_Encap_Inheri_Poly
     internal class Bird : Animal
     {
         public double WingSpan { get; set; }
+
+        public Bird(string name, int age, double weight, double longestDimension, int numberOfLimbs, double wingSpan)
+            : base(name, age, weight, longestDimension, numberOfLimbs)
+        {
+            WingSpan = wingSpan;
+        }
         public override void doSound()
         {
             Console.WriteLine("Chirps");
@@ -69,6 +99,12 @@ namespace Classes_Encap_Inheri_Poly
     internal class Wolf : Animal
     {
         public bool LikesToHowl { get; set; }
+
+        public Wolf(string name, int age, double weight, double longestDimension, int numberOfLimbs, bool likesToHowl)
+            : base(name, age, weight, longestDimension, numberOfLimbs)
+        {
+            LikesToHowl = likesToHowl;
+        }
         public override void doSound()
         {
             Console.WriteLine("Howls and growls");
