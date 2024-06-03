@@ -89,7 +89,8 @@
                 Dog dog8 = new Dog("Coke", 10, 27, 0.7, 4, false);
 
                 List<Dog> dogs = new List<Dog>() { dog, dog2, dog3, dog4, dog5, dog6, dog7, dog8 };
-
+                //dogs.Add(horse);
+                //3.4.9: A dog is an animal, and a horse is an animal, but a horse is not a dog, hence it can't be added to the list.
 
             }
             catch (Exception Ex)
