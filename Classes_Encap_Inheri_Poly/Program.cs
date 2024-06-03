@@ -98,6 +98,7 @@
                 foreach (Animal animal in animals)
                 {
                     Console.WriteLine($"{animal.Stats()}");
+                    //3.4.13: On each of the animals in the list pull print the string built by the method Stats() that is the most specific available to the subclass of said animal.
                 }
 
             }
