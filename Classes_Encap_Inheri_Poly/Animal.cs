@@ -13,6 +13,7 @@ namespace Classes_Encap_Inheri_Poly
         protected double Weight { get; set; }
         protected double LongestDimension { get; set; }
         protected int NumberOfLimbs { get; set; }
+        // 3.3.14: Answer: We'd put it here in the Animal class so it can easily be implemented and reached by all the animals.
 
         public Animal(string name, int age, double weight, double longestDimension, int numberOfLimbs)
         {
@@ -85,6 +86,7 @@ namespace Classes_Encap_Inheri_Poly
     internal class Bird : Animal
     {
         public double WingSpan { get; set; }
+        // 3.3.13: Answer: We'd put it here in the Bird class so it can easily be implemented and reached by all the birds.
 
         public Bird(string name, int age, double weight, double longestDimension, int numberOfLimbs, double wingSpan)
             : base(name, age, weight, longestDimension, numberOfLimbs)
