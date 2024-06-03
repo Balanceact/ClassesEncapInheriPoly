@@ -24,7 +24,7 @@ namespace Classes_Encap_Inheri_Poly
             NumberOfLimbs = numberOfLimbs;
         }
 
-        public abstract void doSound();
+        public abstract void DoSound();
 
         public abstract string Stats();
     }
@@ -38,7 +38,7 @@ namespace Classes_Encap_Inheri_Poly
         {
             IsShoed = isShoed;
         }
-        public override void doSound()
+        public override void DoSound()
         {
             Console.WriteLine("Neigh");
         }
@@ -56,7 +56,7 @@ namespace Classes_Encap_Inheri_Poly
         {
             LikesToBark = likesToBark;
         }
-        public override void doSound()
+        public override void DoSound()
         {
             Console.WriteLine("Bark");
         }
@@ -74,7 +74,7 @@ namespace Classes_Encap_Inheri_Poly
         {
             NumberOfSpikes = numberOfSpikes;
         }
-        public override void doSound()
+        public override void DoSound()
         {
             Console.WriteLine("Grunts and snuffles");
         }
@@ -92,7 +92,7 @@ namespace Classes_Encap_Inheri_Poly
         {
             IsPoisonous = isPoisonous;
         }
-        public override void doSound()
+        public override void DoSound()
         {
             Console.WriteLine("Munches");
         }
@@ -111,7 +111,7 @@ namespace Classes_Encap_Inheri_Poly
         {
             WingSpan = wingSpan;
         }
-        public override void doSound()
+        public override void DoSound()
         {
             Console.WriteLine("Chirps");
         }
@@ -129,7 +129,7 @@ namespace Classes_Encap_Inheri_Poly
         {
             LikesToHowl = likesToHowl;
         }
-        public override void doSound()
+        public override void DoSound()
         {
             Console.WriteLine("Howls and growls");
         }

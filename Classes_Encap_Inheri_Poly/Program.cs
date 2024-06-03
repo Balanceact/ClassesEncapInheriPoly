@@ -69,7 +69,11 @@
 
                 List<Animal> animals = new List<Animal>() { horse, dog, hedgehog, worm, bird, wolf, pelican, flamingo, swan, wolfman };
 
-
+                foreach (Animal animal in animals)
+                {
+                    Console.WriteLine($"{animal.GetType().Name}");
+                    animal.DoSound();
+                }
             }
             catch (Exception Ex)
             {
