@@ -95,6 +95,11 @@
                 //3.4.10: If by "all classes" you mean the ones made in 3.3, then the answer is a list of Animals.
                 //If by "all classes" you mean ALL classes then perhaps a list of Classes?
 
+                foreach (Animal animal in animals)
+                {
+                    Console.WriteLine($"{animal.Stats()}");
+                }
+
             }
             catch (Exception Ex)
             {
