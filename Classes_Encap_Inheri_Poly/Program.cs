@@ -108,6 +108,8 @@
                     if(animal is Dog)
                     { 
                         Console.WriteLine($"{animal.Stats()}");
+                        //animal.blargh();
+                        //3.4.16-17: I don't know.
                     }
                 }
 
