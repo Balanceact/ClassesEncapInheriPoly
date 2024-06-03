@@ -75,7 +75,7 @@
                     animal.DoSound();
                     if (animal is IPerson)
                     {
-                        //animal as IPerson.Talk(); 
+                        ((IPerson)animal).Talk();
                         //ToDo: Find and implement solution for 3.4.7.
                     }
                 }
@@ -108,8 +108,8 @@
                     if(animal is Dog)
                     { 
                         Console.WriteLine($"{animal.Stats()}");
-                        //animal.blargh();
-                        //3.4.16-17: I don't know.
+                        ((Dog)animal).Blargh();
+                        //3.4.16-18: Scope is animal, must cast animal to Dog to reach method.
                     }
                 }
 
