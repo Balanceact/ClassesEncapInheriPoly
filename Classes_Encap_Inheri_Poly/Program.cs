@@ -79,6 +79,18 @@
                         //ToDo: Find and implement solution for 3.4.7.
                     }
                 }
+
+                Dog dog2 = new Dog("Arrak", 4, 21, 0.7, 4, false);
+                Dog dog3 = new Dog("Onyx", 5, 22, 0.7, 4, true);
+                Dog dog4 = new Dog("Jet", 6, 23, 0.7, 4, false);
+                Dog dog5 = new Dog("Obsidian", 7, 24, 0.7, 4, true);
+                Dog dog6 = new Dog("Hematite", 8, 25, 0.7, 4, false);
+                Dog dog7 = new Dog("Vanta", 9, 26, 0.7, 4, true);
+                Dog dog8 = new Dog("Coke", 10, 27, 0.7, 4, false);
+
+                List<Dog> dogs = new List<Dog>() { dog, dog2, dog3, dog4, dog5, dog6, dog7, dog8 };
+
+
             }
             catch (Exception Ex)
             {
