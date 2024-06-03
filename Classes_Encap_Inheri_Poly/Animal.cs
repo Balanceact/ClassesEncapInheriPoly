@@ -29,25 +29,49 @@ namespace Classes_Encap_Inheri_Poly
     internal class Horse : Animal
     { 
         public bool IsShoed { get; set; }
+        public override void doSound()
+        {
+            Console.WriteLine("Neigh");
+        }
     }
     internal class Dog : Animal
     {
         public bool LikesToBark { get; set; }
+        public override void doSound()
+        {
+            Console.WriteLine("Bark");
+        }
     }
     internal class Hedgehog : Animal
     {
         public int NumberOfSpikes { get; set; }
+        public override void doSound()
+        {
+            Console.WriteLine("Grunts and snuffles");
+        }
     }
     internal class Worm : Animal
     {
         public bool IsPoisonus { get; set; }
+        public override void doSound()
+        {
+            Console.WriteLine("Munches");
+        }
     }
     internal class Bird : Animal
     {
         public double WingSpan { get; set; }
+        public override void doSound()
+        {
+            Console.WriteLine("Chirps");
+        }
     }
     internal class Wolf : Animal
     {
         public bool LikesToHowl { get; set; }
+        public override void doSound()
+        {
+            Console.WriteLine("Howls and growls");
+        }
     }
 }
