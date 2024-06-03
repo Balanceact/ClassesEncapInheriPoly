@@ -138,4 +138,18 @@ namespace Classes_Encap_Inheri_Poly
             IsUglyDuckling = isUglyDuckling;
         }
     }
+    internal class Wolfman : Wolf, IPerson
+    {
+        
+
+        public Wolfman(string name, int age, double weight, double longestDimension, int numberOfLimbs, bool likesToHowl)
+            : base(name, age, weight, longestDimension, numberOfLimbs, likesToHowl)
+        {
+            
+        }
+        public void Talk()
+        {
+            Console.WriteLine("What? You think I run around on all four like a dog? Ofcourse not! *Procedes to bark and howl*");
+        }
+    }
 }
