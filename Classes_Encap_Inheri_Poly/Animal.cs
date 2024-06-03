@@ -25,6 +25,8 @@ namespace Classes_Encap_Inheri_Poly
         }
 
         public abstract void doSound();
+
+        public abstract string Stats();
     }
 
     internal class Horse : Animal
@@ -40,6 +42,10 @@ namespace Classes_Encap_Inheri_Poly
         {
             Console.WriteLine("Neigh");
         }
+        public override string Stats()
+        {
+            return $"The {this.GetType().Name} named {this.Name} is {this.Age} years of age, weighs {this.Weight}kg, its length/height is {this.LongestDimension}m and it has {this.NumberOfLimbs} limbs. It also has the following properties: has horseshooes: {this.IsShoed}.";
+        }
     }
     internal class Dog : Animal
     {
@@ -53,6 +59,10 @@ namespace Classes_Encap_Inheri_Poly
         public override void doSound()
         {
             Console.WriteLine("Bark");
+        }
+        public override string Stats()
+        {
+            return $"The {this.GetType().Name} named {this.Name} is {this.Age} years of age, weighs {this.Weight}kg, its length/height is {this.LongestDimension}m and it has {this.NumberOfLimbs} limbs. It also has the following properties: likes to bark: {this.LikesToBark}.";
         }
     }
     internal class Hedgehog : Animal
@@ -68,19 +78,27 @@ namespace Classes_Encap_Inheri_Poly
         {
             Console.WriteLine("Grunts and snuffles");
         }
+        public override string Stats()
+        {
+            return $"The {this.GetType().Name} named {this.Name} is {this.Age} years of age, weighs {this.Weight}kg, its length/height is {this.LongestDimension}m and it has {this.NumberOfLimbs} limbs. It also has the following properties: has this many spikes: {this.NumberOfSpikes}.";
+        }
     }
     internal class Worm : Animal
     {
-        public bool IsPoisonus { get; set; }
+        public bool IsPoisonous { get; set; }
 
-        public Worm(string name, int age, double weight, double longestDimension, int numberOfLimbs, bool isPoisonus)
+        public Worm(string name, int age, double weight, double longestDimension, int numberOfLimbs, bool isPoisonous)
             : base(name, age, weight, longestDimension, numberOfLimbs)
         {
-            IsPoisonus = isPoisonus;
+            IsPoisonous = isPoisonous;
         }
         public override void doSound()
         {
             Console.WriteLine("Munches");
+        }
+        public override string Stats()
+        {
+            return $"The {this.GetType().Name} named {this.Name} is {this.Age} years of age, weighs {this.Weight}kg, its length/height is {this.LongestDimension}m and it has {this.NumberOfLimbs} limbs. It also has the following properties: is poisonous to eat: {this.IsPoisonous}.";
         }
     }
     internal class Bird : Animal
@@ -97,6 +115,10 @@ namespace Classes_Encap_Inheri_Poly
         {
             Console.WriteLine("Chirps");
         }
+        public override string Stats()
+        {
+            return $"The {this.GetType().Name} named {this.Name} is {this.Age} years of age, weighs {this.Weight}kg, its length/height is {this.LongestDimension}m and it has {this.NumberOfLimbs} limbs. It also has the following properties: has a wingspen of: {this.WingSpan}m.";
+        }
     }
     internal class Wolf : Animal
     {
@@ -111,6 +133,10 @@ namespace Classes_Encap_Inheri_Poly
         {
             Console.WriteLine("Howls and growls");
         }
+        public override string Stats()
+        {
+            return $"The {this.GetType().Name} named {this.Name} is {this.Age} years of age, weighs {this.Weight}kg, its length/height is {this.LongestDimension}m and it has {this.NumberOfLimbs} limbs. It also has the following properties: likes to howl: {this.LikesToHowl}.";
+        }
     }
     internal class Pelican : Bird
     {
@@ -121,6 +147,10 @@ namespace Classes_Encap_Inheri_Poly
         {
             BeakSize = beakSize;
         }
+        public override string Stats()
+        {
+            return $"The {this.GetType().Name} named {this.Name} is {this.Age} years of age, weighs {this.Weight}kg, its length/height is {this.LongestDimension}m and it has {this.NumberOfLimbs} limbs. It also has the following properties: has a wingspen of: {this.WingSpan}m and a beaksize of {this.BeakSize}m.";
+        }
     }
     internal class Flamingo : Bird
     {
@@ -130,6 +160,10 @@ namespace Classes_Encap_Inheri_Poly
         {
             LikesToStandOnOneLeg = likesToStandOnOneLeg;
         }
+        public override string Stats()
+        {
+            return $"The {this.GetType().Name} named {this.Name} is {this.Age} years of age, weighs {this.Weight}kg, its length/height is {this.LongestDimension}m and it has {this.NumberOfLimbs} limbs. It also has the following properties: has a wingspen of: {this.WingSpan}m, likes to stand on only one leg: {this.LikesToStandOnOneLeg}.";
+        }
     }
     internal class Swan : Bird
     {
@@ -138,6 +172,10 @@ namespace Classes_Encap_Inheri_Poly
             : base(name, age, weight, longestDimension, numberOfLimbs, wingSpan)
         {
             IsUglyDuckling = isUglyDuckling;
+        }
+        public override string Stats()
+        {
+            return $"The {this.GetType().Name} named {this.Name} is {this.Age} years of age, weighs {this.Weight}kg, its length/height is {this.LongestDimension}m and it has {this.NumberOfLimbs} limbs. It also has the following properties: has a wingspen of: {this.WingSpan}m, is an ugly duckling: {this.IsUglyDuckling}.";
         }
     }
     internal class Wolfman : Wolf, IPerson
