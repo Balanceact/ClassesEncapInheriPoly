@@ -73,6 +73,11 @@
                 {
                     Console.WriteLine($"{animal.GetType().Name}");
                     animal.DoSound();
+                    if (animal is IPerson)
+                    {
+                        //animal as IPerson.Talk(); 
+                        //ToDo: Find and implement solution for 3.4.7.
+                    }
                 }
             }
             catch (Exception Ex)
